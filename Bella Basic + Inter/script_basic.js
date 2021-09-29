@@ -166,7 +166,7 @@ class Fish extends Animal {
         this.watertype = d;
     }
     printFish() {
-        return ` <br> My uncle has a ${this.age} year(s) old ${this.color}-colored ${this.type} and it lives in ${watertype}.`
+        return ` <br> My uncle has a ${this.age} year(s) old ${this.color}-colored ${this.type} and it lives in ${this.watertype}.`
     }
 }
 
@@ -177,5 +177,7 @@ var fishy3 = new Fish("Mandarin fish", "1", "blue and orange", "saltwater");
 var fisharray = [fishy1, fishy2, fishy3];
 
 for (let value of fisharray) {
-    document.getElementById("squaretobe").innerHTML += value.printFish();
+    document.getElementById("round").innerHTML += value.printFish();
 }
+
+//Extra
