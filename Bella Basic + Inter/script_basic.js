@@ -113,3 +113,69 @@ var array = [ani1, ani2, ani3];
 for (let val of array) {
     document.getElementById("spot").innerHTML += val.printAnimal();
 }
+
+//intermediate
+
+class Motorbike extends car {
+    wheels;
+
+    constructor(a, b, c, d, e) {
+        super(a, b, c, d);
+        this.wheels = e;
+    }
+    printMotor() {
+        return ` <br> The new ${this.model} of ${this.brand} comes in the size ${this.type} and color ${this.color} and has ${this.wheels} wheels.`;
+    }
+}
+
+var motorlos1 = new Motorbike("KTM", "big thang", "biggo", "red", "2");
+var motorlos2 = new Motorbike("Kawasaki", "Boom", "Pow", "Wow", "3");
+var motorlos3 = new Motorbike("Honda", "normal", "premium", "blue", "2");
+
+
+document.getElementById("spottobe").innerHTML += motorlos1.printMotor();
+document.getElementById("spottobe").innerHTML += motorlos2.printMotor();
+document.getElementById("spottobe").innerHTML += motorlos3.printMotor();
+
+
+class Profession extends Person {
+    jobposition;
+
+    constructor(a, b, c, d, e) {
+        super(a, b, c, d);
+        this.jobposition = e;
+    }
+    callOutagain() {
+        return `<br> ${this.fName} ${this.lName} is ${this.age} old and drives ${this.car} and works as ${this.jobposition}.`
+    }
+}
+
+var carlos7 = new Profession("Carlos", "Motorlos", "17", "nothing", "unemployed");
+var carlos8 = new Profession("Carlos", "Ruhig", "28", "VW", "Marketing-Senior");
+var carlos9 = new Profession("Carlos", "Unehrlich", "33", "SsangYong", "Kindergardener");
+
+document.getElementById("square").innerHTML += carlos7.callOutagain();
+document.getElementById("square").innerHTML += carlos8.callOutagain();
+document.getElementById("square").innerHTML += carlos9.callOutagain();
+
+class Fish extends Animal {
+    watertype;
+
+    constructor(a, b, c, d) {
+        super(a, b, c);
+        this.watertype = d;
+    }
+    printFish() {
+        return ` <br> My uncle has a ${this.age} year(s) old ${this.color}-colored ${this.type} and it lives in ${watertype}.`
+    }
+}
+
+var fishy1 = new Fish("Goldfish", "1", "orange", "saltwater");
+var fishy2 = new Fish("Trout", "1", "greyish", "freshwater");
+var fishy3 = new Fish("Mandarin fish", "1", "blue and orange", "saltwater");
+
+var fisharray = [fishy1, fishy2, fishy3];
+
+for (let value of fisharray) {
+    document.getElementById("squaretobe").innerHTML += value.printFish();
+}
