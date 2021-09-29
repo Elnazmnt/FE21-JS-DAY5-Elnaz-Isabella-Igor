@@ -1,5 +1,7 @@
 //object basic
-let car1 = {
+
+
+/* let car1 = {
     brand: "Volkswagen",
     model: "Golf",
     type: "medium",
@@ -34,12 +36,13 @@ let car3 = {
     }
 }
 
-document.getElementById("place").innerHTML += car3.printOBJ();
+document.getElementById("place").innerHTML += car3.printOBJ(); */
 
 // same with other themes, but no time
 
 //classes basic
-class car {
+
+/* class car {
     brand;
     model;
     type;
@@ -88,7 +91,7 @@ var carlos6 = new Person("Carlos", "Unehrlich", "48", "SsangYong");
 
 document.getElementById("placetobe").innerHTML = carlos4.callOut();
 document.getElementById("placetobe").innerHTML += carlos5.callOut();
-document.getElementById("placetobe").innerHTML += carlos6.callOut();
+document.getElementById("placetobe").innerHTML += carlos6.callOut(); */
 
 class Animal {
     type;
@@ -105,7 +108,7 @@ class Animal {
     }
 }
 
-var ani1 = new Animal("Hound", "4", "black");
+var ani1 = new Animal("Dog", "4", "black");
 var ani2 = new Animal("Giraffe", "5", "yellow");
 var ani3 = new Animal("Mouse", "1", "neon-green");
 
@@ -116,7 +119,7 @@ for (let val of array) {
 
 //intermediate
 
-class Motorbike extends car {
+/* class Motorbike extends car {
     wheels;
 
     constructor(a, b, c, d, e) {
@@ -157,7 +160,7 @@ var carlos9 = new Profession("Carlos", "Unehrlich", "33", "SsangYong", "Kinderga
 document.getElementById("square").innerHTML += carlos7.callOutagain();
 document.getElementById("square").innerHTML += carlos8.callOutagain();
 document.getElementById("square").innerHTML += carlos9.callOutagain();
-
+ */
 class Fish extends Animal {
     watertype;
 
@@ -179,28 +182,3 @@ var fisharray = [fishy1, fishy2, fishy3];
 for (let value of fisharray) {
     document.getElementById("round").innerHTML += value.printFish();
 }
-
-//Extra
-
-class Hotel {
-    hotelName;
-    numberOfNights;
-    address;
-    image;
-
-    constructor(hname, nights, add, img) {
-        this.hotelName = hname;
-        this.numberOfNights = nights;
-        this.address = add;
-        this.image = img;
-    }
-    showAvailability() {
-
-    }
-}
-
-var randomN = Math.floor(Math.random() * 11);
-
-var hotel1 = ("Gold Crate", randomN, "Gold Street 1", "img");
-var hotel2 = ("Blue Lagoon", randomN, "Blue Street 45", "img");
-var hotel3 = ("Red Hell", randomN, "Red Street 666", "img");
