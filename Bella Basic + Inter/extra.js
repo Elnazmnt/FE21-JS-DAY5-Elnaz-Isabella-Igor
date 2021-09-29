@@ -22,3 +22,5 @@ var randomN = Math.floor(Math.random() * 11);
 var hotel1 = ("Gold Crate", randomN, "Gold Street 1", "img");
 var hotel2 = ("Blue Lagoon", randomN, "Blue Street 45", "img");
 var hotel3 = ("Red Hell", randomN, "Red Street 666", "img");
+
+// correct version in Igors Folder
